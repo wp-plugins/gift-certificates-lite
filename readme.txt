@@ -32,13 +32,27 @@ Front end workflow. Let' imagine that I sell gift certificate for visiting museu
 6. I scan QR Code and being redirected to certificate page where I can see certificate details and manage it. (For example, I can see transaction details and mark certificates as redeemed).
 7. Then I allow you to visit museum. This is just particular situation how the plugin might be used. You can use it for selling any gift certificates. Unlimited possibilities.
 
+If you require more features/functions, please visit the <a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin">website</a> for more information.
+
 == Installation ==
 
 Install and activate the plugin like you do with any other plugins.
 
 == Frequently Asked Questions ==
 
-None.
+= Shortcode =
+
+To place the certificate in any page or post, use [giftcertificateslite].
+
+= IPN Handler =
+
+If your set up for paypal requires IPN, you can use http://www.domain.com/wp-content/plugins/gift-certificates-lite/paypal_ipn.php.  Most systems wont require this, but if you have trouble receiving notifications to your admin side, then turn it on, or off and see what results you get.
+
+= Add Certificate menu =
+
+The Add Certificate panel creates a manual certificate.  In order to use this function, you need to place an email address, then this certificate will be created and shown under Certificates menu. This function doesn't send/email the certificate to the recipient automatically.
+
+If you require more features/functions, please visit the <a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin">website</a> for more information.
 
 == Screenshots ==
 
