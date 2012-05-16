@@ -32,7 +32,7 @@ Front end workflow. Let' imagine that I sell gift certificate for visiting museu
 6. I scan QR Code and being redirected to certificate page where I can see certificate details and manage it. (For example, I can see transaction details and mark certificates as redeemed).
 7. Then I allow you to visit museum. This is just particular situation how the plugin might be used. You can use it for selling any gift certificates. Unlimited possibilities.
 
-If you require more features/functions, please visit the <a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin">website</a> for more information.
+If you require more features/functions, please visit the <a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus">website</a> for more information.
 
 == Installation ==
 
