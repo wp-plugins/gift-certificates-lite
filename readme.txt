@@ -1,14 +1,14 @@
 === WP Gift Certificate Reloaded Lite ===
 Contributors: gcwebsolutions
 Plugin Name: WP Gift Certificate Reloaded Lite
-Plugin URI: http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus
+Plugin URI: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
 Author: gcwebsolutions
-Author URI: http://www.wordpressthemesforevents.com/
-Donate link: http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus
+Author URI: http://www.wpgiftcertificatereloaded.com/
+Donate link: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
 Tags: gift certificate, gift, certificate, paypal, payment, sell
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.27
+Stable tag: 1.28
 
 WP Gift Certificate Reloaded Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
 
@@ -52,7 +52,7 @@ If your set up for paypal requires IPN, you can use http://www.domain.com/wp-con
 
 The Add Certificate panel creates a manual certificate.  In order to use this function, you need to place an email address, then this certificate will be created and shown under Certificates menu. This function doesn't send/email the certificate to the recipient automatically.
 
-If you require more features/functions, please visit the <a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin">website</a> for more information.
+If you require more features/functions, please visit the <a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus">website</a> for more information.
 
 == Screenshots ==
 
