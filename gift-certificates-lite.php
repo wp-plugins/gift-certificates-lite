@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: WP Gift Certificate Reloaded Lite
-Plugin URI: http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus
+Plugin URI: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
 Description: This plugin allows you to sell printable Gift Certificates Lite as well as manage sold Gift Certificates Lite. Payments are handled and accepted through paypal. A visitor can place up to 10 names per transaction. The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
-Version: 1.27
+Version: 1.17
 Author: GC Development Team
-Author URI: http://www.wordpressthemesforevents.com/
+Author URI: http://www.wpgiftcertificatereloaded.com/
 */
 include_once(dirname(__FILE__).'/const.php');
 wp_enqueue_script("jquery");
