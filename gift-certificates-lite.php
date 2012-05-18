@@ -285,13 +285,13 @@ class giftcertificateslite_class
 							<h3 class="hndle" style="cursor: default;"><span>WP Gift Certificate Reloaded Plus</span></h3>
 							<div class="inside">
 								<ul>
-									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Overview of features</a></li>
-									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">What\'s included</a></li>
-									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Screenshots</a></li>
-									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Video</a></li>
+									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Overview of features</a></li>
+									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">What\'s included</a></li>
+									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Screenshots</a></li>
+									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Video</a></li>
 								</ul>
 								<center>
-									<a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank"><img src="'.plugins_url('/images/gift-certificate.jpg', __FILE__).'" alt="WP Gift Certificate Reloaded Plus"></a>
+									<a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank"><img src="'.plugins_url('/images/gift-certificate.jpg', __FILE__).'" alt="WP Gift Certificate Reloaded Plus"></a>
 								</center>
 							</div>
 						</div>
