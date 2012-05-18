@@ -64,7 +64,7 @@ If you require more features/functions, please visit the <a href="http://www.wpg
 == Changelog ==
 
 = 1.28 =
-Minor bugs fixed.
+Minor bugs and typos fixed.
 
 = 1.27 =
 This is the first version of WP Gift Certificate Reloaded Lite plugin.
