@@ -191,10 +191,10 @@ class giftcertificateslite_class
 		$errors = array();
 		if ($this->enable_paypal == "on")
 		{
-			if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $this->paypal_id) || strlen($this->paypal_id) == 0) $errors[] = "PayPal ID must be valid e-mail address";
+			if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i", $this->paypal_id) || strlen($this->paypal_id) == 0) $errors[] = "PayPal ID must be valid e-mail address";
 		}
-		if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $this->owner_email) || strlen($this->owner_email) == 0) $errors[] = "Admin e-mail must be valid e-mail address";
-		if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $this->from_email) || strlen($this->from_email) == 0) $errors[] = "Sender e-mail must be valid e-mail address";
+		if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i", $this->owner_email) || strlen($this->owner_email) == 0) $errors[] = "Admin e-mail must be valid e-mail address";
+		if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i", $this->from_email) || strlen($this->from_email) == 0) $errors[] = "Sender e-mail must be valid e-mail address";
 		if (strlen($this->title) < 3) $errors[] = "Certificate title is too short";
 		if (!is_numeric($this->price) || floatval($this->price) <= 0) $errors[] = "Certificate price is invalid";
 		if (!is_numeric($this->validity_period) || floatval($this->validity_period) <= 0) $errors[] = "Validity period is invalid";
@@ -285,13 +285,13 @@ class giftcertificateslite_class
 							<h3 class="hndle" style="cursor: default;"><span>WP Gift Certificate Reloaded Plus</span></h3>
 							<div class="inside">
 								<ul>
-									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Overview of features</a></li>
-									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">What\'s included</a></li>
-									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Screenshots</a></li>
-									<li style="display: list-item;"><a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Video</a></li>
+									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Overview of features</a></li>
+									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">What\'s included</a></li>
+									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Screenshots</a></li>
+									<li style="display: list-item;"><a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank">Video</a></li>
 								</ul>
 								<center>
-									<a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank"><img src="'.plugins_url('/images/gift-certificate.jpg', __FILE__).'" alt="WP Gift Certificate Reloaded Plus"></a>
+									<a href="http://www.wordpressthemesforevents.com/wp-gift-certificate-reloaded-plugin-plus" target="_blank"><img src="'.plugins_url('/images/gift-certificate.jpg', __FILE__).'" alt="WP Gift Certificate Reloaded Plus"></a>
 								</center>
 							</div>
 						</div>
@@ -679,7 +679,7 @@ class giftcertificateslite_class
 					unset($errors);
 					if (strlen($recipient) < 2) $errors[] = "recipient's name is too short";
 					else if (strlen($recipient) > 128) $errors[] = "recipient's name is too long";
-					if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email) || strlen($email) == 0) $errors[] = "e-mail must be valid e-mail address";
+					if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i", $email) || strlen($email) == 0) $errors[] = "e-mail must be valid e-mail address";
 
 					if (empty($errors)) {
 						if (!empty($id)) {

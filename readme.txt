@@ -4,7 +4,7 @@ Plugin Name: WP Gift Certificate Reloaded Lite
 Plugin URI: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
 Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
-Donate link: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
+Donate link: http://www.wpgiftcertificatereloaded.com/donations
 Tags: gift certificate, gift, certificate, paypal, payment, sell
 Requires at least: 3.0
 Tested up to: 3.3.1
