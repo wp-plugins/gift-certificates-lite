@@ -7,7 +7,7 @@ Author URI: http://www.wpgiftcertificatereloaded.com/
 Donate link: http://www.wpgiftcertificatereloaded.com/donations
 Tags: gift certificate, gift, certificate, paypal, payment, sell
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.4.1
 Stable tag: 1.28
 
 WP Gift Certificate Reloaded Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
