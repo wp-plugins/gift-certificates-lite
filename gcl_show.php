@@ -42,8 +42,8 @@ body {font-family: arial, verdana; font-size: 13px; color: #000;}
 		<table style="border: solid 2px #000;width: 600px; margin-bottom: 20px; border-collapse: collapse">
 			<tr>
 				<td style="padding: 10px; vertical-align: middle; text-align: center; border: 1px solid #000; width: 150px;">
-					<!-- <img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|1&chl='.rawurlencode(get_bloginfo("wpurl").'/?gift-certificate='.$row["code"]).'" alt="QR Code" /> -->
-					<img src="'.plugins_url('/phpqrcode/qrcode.php?url='.rawurlencode(get_bloginfo("wpurl").'/?gift-certificate='.$row["code"]), __FILE__).'" alt="QR Code" width="150" height="150" />
+					<!-- <img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|1&chl='.rawurlencode(get_bloginfo("wpurl").'/?gcl-certificate='.$row["code"]).'" alt="QR Code" /> -->
+					<img src="'.plugins_url('/phpqrcode/qrcode.php?url='.rawurlencode(get_bloginfo("wpurl").'/?gcl-certificate='.$row["code"]), __FILE__).'" alt="QR Code" width="150" height="150" />
 					'.$status.'
 				</td>
 				<td style="padding: 10px; vertical-align: top; border: 1px solid #000;">

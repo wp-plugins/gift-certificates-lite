@@ -63,6 +63,9 @@ If you require more features/functions, please visit the <a href="http://www.wpg
 
 == Changelog ==
 
+= 1.281 =
+Minor scan bug fixed due to typo, now corrected.
+
 = 1.28 =
 Minor bugs and typos fixed.
 
