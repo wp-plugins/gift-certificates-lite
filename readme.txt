@@ -63,6 +63,13 @@ If you require more features/functions, please visit the <a href="http://www.wpg
 
 == Changelog ==
 
+= 1.289 =
+Added PayPal currencies: AUD, CAD, GBP (USD is default)
+
+Updated PayPal ipn handler to cURL
+
+Updated paypal-ipn.php for new http1.1 requirements
+
 = 1.281 =
 Minor scan bug fixed due to typo, now corrected.
 

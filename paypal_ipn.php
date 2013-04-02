@@ -2,26 +2,27 @@
 include_once('../../../wp-load.php');
 include_once(dirname(__FILE__).'/const.php');
 
-$paypalurl = parse_url((($giftcertificateslite->paypal_sandbox == "on") ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr'));
 $request = "cmd=_notify-validate";
 foreach ($_POST as $key => $value) {
 	$value = urlencode(stripslashes($value));
 	$request .= "&".$key."=".$value;
 }
 
-$header = "POST ".$paypalurl["path"]." HTTP/1.0\r\n";
-$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
-$header .= "Content-Length: ".strlen($request)."\r\n\r\n";
-$handle = fsockopen("ssl://".$paypalurl["host"], 443, $errno, $errstr, 30);
-if ($handle)
-{
-	fputs ($handle, $header.$request);
-	while (!feof($handle))
-	{
-		$result = fgets ($handle, 1024);
-	}
-	if (substr(trim($result), 0, 8) == "VERIFIED")
-	{		$item_number = stripslashes($_POST['item_number']);
+		$paypalurl = ($giftcertificateslite->paypal_sandbox == "on" ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr');
+		$ch = curl_init($paypalurl);
+		curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $request);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+		curl_setopt($ch, CURLOPT_FORBID_REUSE, 1);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Connection: Close'));
+		$result = curl_exec($ch);
+		curl_close($ch);                
+		if (substr(trim($result), 0, 8) != "VERIFIED") die();
+
+		$item_number = stripslashes($_POST['item_number']);
 		$item_name = stripslashes($_POST['item_name']);
 		$payment_status = stripslashes($_POST['payment_status']);
 		$transaction_type = stripslashes($_POST['txn_type']);
@@ -49,7 +50,7 @@ if ($handle)
 					$total = 0;
 					foreach ($certificates as $certificate) {
 						$total += floatval($giftcertificateslite->price);
-						$currency = 'USD';
+						$currency = $giftcertificateslite->currency;
 						$campaign_title = $giftcertificateslite->title;
 					}
 					if (floatval($gross_total) < $total || $mc_currency != $currency) $payment_status = "Unrecognized";
@@ -132,6 +133,4 @@ if ($handle)
 				wp_mail($giftcertificateslite->owner_email, "Non-completed payment received", $body, $mail_headers);
 			}
 		}
-	}
-}
 ?>

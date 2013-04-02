@@ -61,7 +61,7 @@ body {font-family: arial, verdana; font-size: 13px; color: #000;}
 						</tr>
 						<tr>
 							<td style="font-weight: bold; padding-bottom: 10px;">Price:</td>
-							<td style="padding-bottom: 10px;">'.number_format($giftcertificateslite->price, 2, ".", "").' USD</td>
+							<td style="padding-bottom: 10px;">'.number_format($giftcertificateslite->price, 2, ".", "").' '.$giftcertificateslite->currency.'</td>
 						</tr>
 						<tr>
 							<td style="font-weight: bold; padding-bottom: 10px;">Owner:</td>
