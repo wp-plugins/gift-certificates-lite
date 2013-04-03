@@ -1,7 +1,7 @@
 === WP Gift Certificate Reloaded Lite ===
 Contributors: gcwebsolutions
 Plugin Name: WP Gift Certificate Reloaded Lite
-Plugin URI: http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus
+Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
 Donate link: http://www.wpgiftcertificatereloaded.com/donations
@@ -32,7 +32,7 @@ Front end workflow. Let' imagine that I sell gift certificate for visiting museu
 6. I scan QR Code and being redirected to certificate page where I can see certificate details and manage it. (For example, I can see transaction details and mark certificates as redeemed).
 7. Then I allow you to visit museum. This is just particular situation how the plugin might be used. You can use it for selling any gift certificates. Unlimited possibilities.
 
-If you require more features/functions, please visit the <a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus">website</a> for more information.
+If you require more features/functions, please visit the <a href="https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular">website</a> for more information.
 
 == Installation ==
 
@@ -52,7 +52,7 @@ If your set up for paypal requires IPN, you can use http://www.domain.com/wp-con
 
 The Add Certificate panel creates a manual certificate.  In order to use this function, you need to place an email address, then this certificate will be created and shown under Certificates menu. This function doesn't send/email the certificate to the recipient automatically.
 
-If you require more features/functions, please visit the <a href="http://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-plugin-plus">website</a> for more information.
+If you require more features/functions, please visit the <a href="https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular">website</a> for more information.
 
 == Screenshots ==
 
