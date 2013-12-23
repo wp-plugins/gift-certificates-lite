@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: WP Gift Certificate Reloaded Lite
+Plugin Name: WPGC Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Description: This plugin allows you to sell printable Gift Certificates Lite as well as manage sold Gift Certificates Lite. Payments are handled and accepted through paypal. A visitor can place up to 10 names per transaction. The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
-Version: 1.289
+Version: 1.290
 Author: GC Development Team
 Author URI: http://www.wpgiftcertificatereloaded.com/
 */
@@ -331,6 +331,7 @@ class giftcertificateslite_class
 										<select name="giftcertificateslite_currency" id="giftcertificateslite_currency">
                                             <option value="AUD"' . (($this->currency == "AUD") ?  "selected":"") .' >AUD</option>
                                             <option value="CAD"' . (($this->currency == "CAD") ?  "selected":"") .' >CAD</option>
+					                        <option value="EUR"' . (($this->currency == "EUR") ?  "selected":"") .' >EUR</option>
                                             <option value="GBP"' . (($this->currency == "GBP") ?  "selected":"") .' >GBP</option>
                                             <option value="USD" '.(($this->currency == "USD" || $this->currency == "")? "selected":"").' >USD</option>
 										</select>

@@ -4,11 +4,10 @@ Plugin Name: WP Gift Certificate Reloaded Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
-Donate link: http://www.wpgiftcertificatereloaded.com/donations
-Tags: gift certificate, gift, certificate, paypal, payment, sell
+Tags: gift certificate, gift, certificate, paypal, payment, sell, gift vouchers
 Requires at least: 3.0
-Tested up to: 3.5.1
-Stable tag: 1.289
+Tested up to: 3.9.1
+Stable tag: 1.290
 
 WP Gift Certificate Reloaded Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
 
@@ -46,7 +45,7 @@ To place the certificate in any page or post, use [giftcertificateslite].
 
 = IPN Handler =
 
-If your set up for paypal requires IPN, you can use http://www.domain.com/wp-content/plugins/gift-certificates-lite/paypal_ipn.php.  Most systems wont require this, but if you have trouble receiving notifications to your admin side, then turn it on, or off and see what results you get.
+WPGC (WP Gift Certificate Reloaded) flow will require IPN to be set in PayPal website.  It needs to be turned on (through PayPal) and place the url of your domain name, you can use http://www.yourowndomain.com/, note that you need to include the http://www and the trailing slash. 
 
 = Add Certificate menu =
 
@@ -62,6 +61,9 @@ If you require more features/functions, please visit the <a href="https://www.wp
 4. E-mail.
 
 == Changelog ==
+
+= 1.290 =
+Added EUR currency support
 
 = 1.289 =
 Added PayPal currencies: AUD, CAD, GBP (USD is default)

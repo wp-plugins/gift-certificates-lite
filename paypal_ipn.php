@@ -9,15 +9,20 @@ foreach ($_POST as $key => $value) {
 }
 
 		$paypalurl = ($giftcertificateslite->paypal_sandbox == "on" ? 'https://www.sandbox.paypal.com/cgi-bin/webscr' : 'https://www.paypal.com/cgi-bin/webscr');
-		$ch = curl_init($paypalurl);
-		curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
-		curl_setopt($ch, CURLOPT_POST, 1);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, $request);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-		curl_setopt($ch, CURLOPT_FORBID_REUSE, 1);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Connection: Close'));
+		$ch = curl_init();
+					curl_setopt($ch, CURLOPT_URL, $paypalurl);
+					//BOF IPN - HTTP 1.1 LINE ADDED
+					curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
+					//EOF IPN - HTTP 1.1 LINE ADDED
+					curl_setopt($ch, CURLOPT_POST, true);
+					curl_setopt($ch, CURLOPT_POSTFIELDS, $request);
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+					curl_setopt($ch, CURLOPT_HEADER, false);
+					curl_setopt($ch, CURLOPT_TIMEOUT, 20);
+					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+					//BOF IPN - HTTP 1.1 LINE ADDED
+					curl_setopt($ch, CURLOPT_HTTPHEADER, array('Connection: Close'));
+					//EOF IPN - HTTP 1.1 LINE ADDED
 		$result = curl_exec($ch);
 		curl_close($ch);                
 		if (substr(trim($result), 0, 8) != "VERIFIED") die();
