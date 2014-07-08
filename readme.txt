@@ -1,4 +1,4 @@
-=== WP Gift Certificate Reloaded Lite ===
+=== WPGC Lite ===
 Contributors: gcwebsolutions
 Plugin Name: WPGC Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
