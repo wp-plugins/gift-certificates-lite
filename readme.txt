@@ -1,6 +1,6 @@
 === WPGC Lite ===
 Contributors: gcwebsolutions
-Plugin Name: WPGC Lite
+Plugin Name: WP Gift Certificate Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
@@ -9,11 +9,11 @@ Requires at least: 3.5
 Tested up to: 3.9.1
 Stable tag: 1.30L
 
-WPGC Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
+WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
 
 == Description ==
 
-WPGC Lite is a plugin which allows you to manage and sell printable gift certificates on your website. You can sell them to your visitors, and accept payments via PayPal. It's easy, install the plugin and open new feature for your customers!
+WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website. You can sell them to your visitors, and accept payments via PayPal. It's easy, install the plugin and open new feature for your customers!
 
 How the plugin works?
 
