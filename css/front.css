@@ -1,0 +1,247 @@
+a.giftcertificateslite_placeholder, 
+a.giftcertificateslite_placeholder:hover {
+	background-color: #F0F0F0 !important;
+	display: inline-block !important;
+	text-align: center !important;
+	color: #06C !important;
+	font-family: arial !important;
+	font-size: 13px !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+div.giftcertificateslite_signup_box {
+	border: 2px solid #CCC;
+	padding: 15px;
+	line-height: 100%;
+}
+
+div.giftcertificateslite_signup_box form {
+	padding: 0px;
+	margin: 0px;
+}
+
+div.giftcertificateslite_signup_box label {
+	font-size: 18px;
+	font-family: arial;
+	color: #333;
+	line-height: 22px;
+}
+
+div.giftcertificateslite_signup_box label.giftcertificateslite_bigfont {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+div.giftcertificateslite_signup_box label span {
+	font-size: 13px;
+	font-family: arial;
+	color: #888;
+}
+
+div.giftcertificateslite_signup_box .giftcertificateslite_hidden {
+	display: none;
+	margin-top: 15px;
+}
+
+div.giftcertificateslite_signup_box .giftcertificateslite_addrecipient {
+	display: inline-block;
+	font-size: 14px;
+	font-family: arial;
+	color: #888;
+	border: 1px dashed #888;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+div.giftcertificateslite_signup_box .giftcertificateslite_addrecipient:hover {
+	text-decoration: none;
+	color: #333;
+	border: 1px dashed #333;
+}
+
+div.giftcertificateslite_signup_box em {
+	font-size: 14px;
+	font-family: arial;
+	color: #888;
+	line-height: 18px;
+}
+
+select.giftcertificateslite_signup_long, 
+input.giftcertificateslite_signup_long {
+	border: 2px solid #888;
+	font-size: 18px;
+	font-family: arial;
+	width: 98%;
+	margin: 0px;
+/*	padding: 0px;*/
+}
+input.giftcertificateslite_signup_short {
+	border: 2px solid #888;
+	font-size: 18px;
+	font-family: arial;
+	width: 80px;
+	text-align: right;
+	margin: 0px;
+/*	padding: 0px;*/
+}
+input.giftcertificateslite_signup_long:focus,
+input.giftcertificateslite_signup_short:focus {
+	background: #FDFDB8;
+}
+div.giftcertificateslite_signup_buttons {
+	height: 40px;
+}
+input.giftcertificateslite_signup_button {
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+	margin: 0px;
+	padding: 2px 15px 2px 15px;
+}
+div.giftcertificateslite_signup_terms {
+	height: 120px;
+	overflow: scroll;
+	border: 2px solid #888;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: arial;
+	padding: 3px;
+}
+.giftcertificateslite_redborder {
+	border-color: red !important;
+}
+div#giftcertificateslite_signup_spinner {
+	display: none;
+	background: transparent url(../images/spinner.gif) 0 0 no-repeat;
+	margin: 0px;
+	padding: 0px;
+	width: 36px;
+	height: 36px;
+}
+div#giftcertificateslite_signup_errorbox {
+	display: none;
+	background: #FFE8E0 url(../images/failed01.png) 10px 5px no-repeat !important; 
+	margin: 5px 0px !important; 
+	padding: 5px 10px 5px 30px !important; 
+	color: red !important; 
+	font-size: 14px !important; 
+	font-weight: bold !important; 
+	text-align:left !important; 
+	border: 1px dotted red !important;
+	font-family: arial, verdana  !important;
+	line-height: 16px !important;
+}
+div#giftcertificateslite_confirmation_container {
+	font-size: 18px;
+	color: #333;
+	font-family: arial;
+	line-height: 24px;
+	display: none;
+}
+div#giftcertificateslite_confirmation_container table{
+	width: 100%;
+	margin: 0px;
+	padding: 0px !important;
+	border-width: 0px !important;
+}
+div#giftcertificateslite_confirmation_container table tr{
+	margin: 0px;
+	padding: 0px !important;
+	border-width: 0px !important;
+}
+div#giftcertificateslite_confirmation_container table tr td {
+	margin: 0px;
+	padding: 0px 0px 20px 0px !important;
+	border-width: 0px !important;
+	vertical-align: top;
+}
+div#giftcertificateslite_confirmation_container table tr td.giftcertificateslite_confirmation_data {
+	color: #555;
+}
+
+div#giftcertificateslite_confirmation_container span {
+	font-size: 12px;
+}
+
+div#giftcertificateslite_confirmation_container table tr td.giftcertificateslite_confirmation_price {
+	color: green;
+	font-weight: bold;
+}
+
+p.giftcertificateslite_text {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px;
+	padding: 0px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+p.giftcertificateslite_noslots {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px !important;
+	padding: 0px !important;
+	text-align: center;
+}
+
+div.giftcertificateslite_activelist_box {
+	border: 0px solid #CCC;
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+h2.giftcertificateslite_activelist_h2 {
+	font-size: 20px;
+	margin: 0px !important;
+	padding: 0px !important;
+	font-family: arial;
+}
+table.giftcertificateslite_activelist_table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #CCC !important;
+}
+table.giftcertificateslite_activelist_table tr th {
+	color: #333 !important;
+	font-size: 16px !important;
+	font-family: arial !important;
+	font-weight: bold !important;
+	border: 1px solid #CCC;
+	text-align: center !important;
+	background-color: #E0DBD0;
+	padding: 5px !important;
+}
+table.giftcertificateslite_activelist_table tr td {
+	color: #333 !important;
+	font-size: 16px !important;
+	font-family: arial !important;
+	border: 1px solid #CCC;
+	text-align: left;
+	padding: 5px !important;
+}
+a.giftcertificateslite_activelist_link,
+span.giftcertificateslite_activelist_link {
+	color: #47B;
+	font-size: 16px;
+	font-family: arial;
+	text-decoration: none;
+}
+a.giftcertificateslite_activelist_link:hover {
+	text-decoration: underline;
+}
+table.giftcertificateslite_confirmation_table,
+table.giftcertificateslite_activelist_table {
+	background-color: transparent !important;
+}
+div.giftcertificateslite_price {
+	float: right;
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+	
+}
