@@ -65,8 +65,8 @@ foreach ($_POST as $key => $value) {
 		$sql = "INSERT INTO ".$wpdb->prefix."gcl_transactions (
 			tx_str, payer_name, payer_email, gross, currency, payment_status, transaction_type, details, created) VALUES (
 			'".$tx_str."',
-			'".mysql_real_escape_string($first_name).' '.mysql_real_escape_string($last_name)."',
-			'".mysql_real_escape_string($payer_paypal)."',
+			'".$wpdb->prepare($first_name).' '.$wpdb->prepare($last_name)."',
+			'".$wpdb->prepare($payer_paypal)."',
 			'".floatval($gross_total)."',
 			'".$mc_currency."',
 			'".$payment_status."',

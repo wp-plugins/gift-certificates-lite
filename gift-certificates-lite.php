@@ -3,7 +3,7 @@
 Plugin Name: WPGC Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Description: This plugin allows you to sell printable Gift Certificates Lite as well as manage sold Gift Certificates Lite. Payments are handled and accepted through paypal. A visitor can place up to 10 names per transaction. The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
-Version: 1.290
+Version: 1.30L
 Author: GC Development Team
 Author URI: http://www.wpgiftcertificatereloaded.com/
 */
@@ -331,8 +331,14 @@ class giftcertificateslite_class
 										<select name="giftcertificateslite_currency" id="giftcertificateslite_currency">
                                             <option value="AUD"' . (($this->currency == "AUD") ?  "selected":"") .' >AUD</option>
                                             <option value="CAD"' . (($this->currency == "CAD") ?  "selected":"") .' >CAD</option>
-					                        <option value="EUR"' . (($this->currency == "EUR") ?  "selected":"") .' >EUR</option>
+                                            <option value="CHF"' . (($this->currency == "CHF") ?  "selected":"") .' >CHF</option>
+                                            <option value="DKK"' . (($this->currency == "DKK") ?  "selected":"") .' >DKK</option>					    
+                                            <option value="EUR"' . (($this->currency == "EUR") ?  "selected":"") .' >EUR</option>
                                             <option value="GBP"' . (($this->currency == "GBP") ?  "selected":"") .' >GBP</option>
+                                            <option value="MXN"' . (($this->currency == "MXN") ?  "selected":"") .' >MXN</option>
+                                            <option value="NOK"' . (($this->currency == "NOK") ?  "selected":"") .' >NOK</option>
+                                            <option value="NZD"' . (($this->currency == "NZD") ?  "selected":"") .' >NZD</option>
+                                            <option value="SEK"' . (($this->currency == "SEK") ?  "selected":"") .' >SEK</option>
                                             <option value="USD" '.(($this->currency == "USD" || $this->currency == "")? "selected":"").' >USD</option>
 										</select>
 										<br /><em>Enter price per one gift certificate.</em></td>
@@ -695,8 +701,8 @@ class giftcertificateslite_class
 					if (empty($errors)) {
 						if (!empty($id)) {
 							$sql = "UPDATE ".$wpdb->prefix."gcl_certificates SET 
-								recipient = '".mysql_real_escape_string($recipient)."',
-								email = '".mysql_real_escape_string($email)."'
+								recipient = '".@$wpdb->prepare($recipient)."',
+								email = '".@$wpdb->prepare($email)."'
 								WHERE id = '".$id."'";
 							if ($wpdb->query($sql) !== false) {
 								setcookie("giftcertificateslite_info", "Certificate successfully updated", time()+30, "/", ".".str_replace("www.", "", $_SERVER["SERVER_NAME"]));
@@ -713,8 +719,8 @@ class giftcertificateslite_class
 								tx_str, code, recipient, email, price, currency, status, registered, blocked, deleted) VALUES (
 								'".$code."',
 								'".$code."',
-								'".mysql_real_escape_string($recipient)."',
-								'".mysql_real_escape_string($email)."',
+								'".@$wpdb->prepare($recipient)."',
+								'".@$wpdb->prepare($email)."',
 								'0',
 								'',
 								'".GCL_STATUS_ACTIVE_BYADMIN."',
@@ -883,7 +889,7 @@ class giftcertificateslite_class
 					tx_str, code, recipient, email, price, currency, status, registered, blocked, deleted) VALUES (
 					'".$tx_str."',
 					'".$code."',
-					'".mysql_real_escape_string($recipients[$i])."',
+					'".@$wpdb->prepare($recipients[$i])."',
 					'',
 					'".$this->price."',
 					'".$this->currency."',
@@ -954,7 +960,7 @@ class giftcertificateslite_class
 		$form = "";
 		if ($this->check_settings() === true)
 		{
-			$id = intval($_atts["id"]);
+			//$id = intval($_atts["id"]);
 			
 			$terms = htmlspecialchars($this->terms, ENT_QUOTES);
 			$terms = str_replace("\n", "<br />", $terms);
