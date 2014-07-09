@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WPGC Lite
+Plugin Name: WP Gift Certificate Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
 Description: This plugin allows you to sell printable Gift Certificates Lite as well as manage sold Gift Certificates Lite. Payments are handled and accepted through paypal. A visitor can place up to 10 names per transaction. The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
 Version: 1.30L
