@@ -6,8 +6,8 @@ Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
 Tags: gift certificate, gift, certificate, paypal, payment, sell, gift vouchers, wordpress gift certificate
 Requires at least: 3.5
-Tested up to: 4.0
-Stable tag: 1.30L
+Tested up to: 4.1
+Stable tag: 1.60
 
 WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
 
@@ -21,11 +21,11 @@ FRONT END
 
 The visitor view part of the plugin consists of simple form where your visitors can purchase gift certificates. 
 
-Front end workflow. Let' imagine that I sell gift certificate for visiting museum, and you are the visitor who purchases the certificate.
+Front end workflow. Let's imagine that I sell gift certificate for visiting museum, and you are the visitor who purchases the certificate.
 
 1. You fill up the form and click "Continue" button. Then system asks you to confirm your action.
 2. You click "Confirm" button and being redirected to PayPal, where you can pay for certificate(s).
-3. After successfull payment you receive e-mail (it is sent to your PayPal e-mail address) which contains link to printable gift certificate.
+3. After successful payment you receive e-mail (it is sent to your PayPal e-mail address) which contains link to printable gift certificate.
 4. You click this link and see printable gift certificate(s), see below:
 5. You print this certificate and bring it to ticket booth of my museum.
 6. I scan QR Code and being redirected to certificate page where I can see certificate details and manage it. (For example, I can see transaction details and mark certificates as redeemed).
@@ -45,7 +45,7 @@ To place the certificate in any page or post, use [giftcertificateslite].
 
 = IPN Handler =
 
-WPGC (WP Gift Certificate Reloaded) flow will require IPN to be set in PayPal website.  It needs to be turned on (through PayPal) and place the url of your domain name, you can use http://www.place-your-domain-name-here.com/, note that you need to include the http://www and the trailing slash. 
+WPGC (WP Gift Certificate Reloaded) flow will require IPN to be set in PayPal website.  It needs to be turned on (through PayPal) and place the url of your domain name, you can use http://www.place-your-domain-name-here.com/, note that you need to include the http://www and the trailing slash at the end. 
 
 = Add Certificate menu =
 
@@ -61,6 +61,10 @@ If you require more features/functions, please visit the <a href="https://www.wp
 4. E-mail.
 
 == Changelog ==
+
+= 1.60 =
+* New updated responsive design
+* Fixed bug of not taking single quotes (such as apostrophe)
 
 = 1.30L =
 * Added new currencies CHF, DKK, MXN, NOK, NZD, SEK

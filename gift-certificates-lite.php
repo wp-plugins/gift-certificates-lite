@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: WP Gift Certificate Lite
+Plugin Name: WPGC Lite
 Plugin URI: https://www.wpgiftcertificatereloaded.com/wp-gift-certificate-reloaded-modular
-Description: This plugin allows you to sell printable Gift Certificates Lite as well as manage sold Gift Certificates Lite. Payments are handled and accepted through paypal. A visitor can place up to 10 names per transaction. The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
-Version: 1.30L
-Author: GC Development Team
+Description: This plugin allows you to sell printable Gift Certificates as well as manage sold Gift Certificates. Payments are handled and accepted through paypal The certificates are QR code encoded. Use shortcode: [giftcertificateslite].
+Version: 1.60
+Author: GC GROUP
 Author URI: http://www.wpgiftcertificatereloaded.com/
 */
 include_once(dirname(__FILE__).'/const.php');
@@ -889,7 +889,7 @@ class giftcertificateslite_class
 					tx_str, code, recipient, email, price, currency, status, registered, blocked, deleted) VALUES (
 					'".$tx_str."',
 					'".$code."',
-					'".@$wpdb->prepare($recipients[$i])."',
+					'".addslashes($wpdb->prepare($recipients[$i]))."',
 					'',
 					'".$this->price."',
 					'".$this->currency."',
