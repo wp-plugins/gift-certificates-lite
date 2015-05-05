@@ -6,7 +6,7 @@ Author: gcwebsolutions
 Author URI: http://www.wpgiftcertificatereloaded.com/
 Tags: gift certificate, gift, certificate, paypal, payment, sell, gift vouchers, wordpress gift certificate
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.2.1
 Stable tag: 1.60
 
 WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website using QR encoding image.
@@ -14,6 +14,8 @@ WP Gift Certificate Lite is a plugin which allows you to manage and sell printab
 == Description ==
 
 WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website. You can sell them to your visitors, and accept payments via PayPal. It's easy, install the plugin and open new feature for your customers!
+
+[youtube https://www.youtube.com/watch?v=AvotzEH5w0k]
 
 How the plugin works?
 
