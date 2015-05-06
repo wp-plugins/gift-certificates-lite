@@ -15,6 +15,8 @@ WP Gift Certificate Lite is a plugin which allows you to manage and sell printab
 
 WP Gift Certificate Lite is a plugin which allows you to manage and sell printable gift certificates on your website. You can sell them to your visitors, and accept payments via PayPal. It's easy, install the plugin and open new feature for your customers!
 
+[youtube https://www.youtube.com/watch?v=AvotzEH5w0k]
+
 How the plugin works?
 
 FRONT END
